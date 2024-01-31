@@ -1,0 +1,28 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+
+<div class="container">
+
+  <div class="row">
+
+         <div class="col-md-6">
+             <div class="consti1">
+              {% for constitution in all_constitution %}
+                {{ constitution.constitution_word|safe }}
+                  {% endfor %}
+            </div>
+        <div class="col-md-6">
+           <div class="consti2">
+                <a href="{{ constitution.constitution_pdf.url }}">{{ constitution.constitution_pdf }}</a>
+           </div>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+</div>
+<br><br>
+{% endblock %}

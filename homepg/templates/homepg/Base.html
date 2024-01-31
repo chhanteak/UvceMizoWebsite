@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uvce Mizo Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'homepg/style.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid bg-dark">
+    <a class="navbar-brand" href="{% url 'index' %}"><img class="img1" src="{% static 'homepg/logo.png' %}">Uvce Mizo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                      <a class="nav-link" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Academics
+                       </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'admission' %}">Admission Chungchang</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'fee' %}">Fee Structure</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'placement' %}">Placement</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'scho' %}">Scholarship</a></li>
+
+                   </ul>
+                </li>
+                <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Students Corner
+                       </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'syllabus' %}">Syllabus</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'question' %}">Previous Question Paper</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'material' %}">Material</a></li>
+                   </ul>
+                </li>
+
+
+               <li class="nav-item">
+                      <a class="nav-link" href="{% url 'alumni' %}">Alumni</a>
+               </li>
+               <li class="nav-item">
+                      <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+               </li>
+               <li class="nav-item">
+                      <a class="nav-link" href="{% url 'blog' %}">Blogs</a>
+               </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="{% url 'about' %}">About</a>
+               </li>
+
+
+
+           </ul>
+        </div>
+    </div>
+  </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+
+  <footer class="bg-dark text-light text-center">
+        <div class="container fluid">
+            <div class="row">
+                <div class="col-md-2 col-xs-4">
+                    <div class="followus">FOLLOW US</div>
+                    <div class="insta">
+                          <a href="https://instagram.com/uvce_mizo?igshid=MmU2YjMzNjRlOQ==" ><img class="icon" src="{% static 'homepg/insta.png' %}"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                   <div class="contact">
+                       <div class="contactus">CONTACT US</div>
+                       <ul class="contactul">
+                            <li>
+                              <img class="icon" src="{% static 'homepg/pin.png' %}">UVCE, KR Circle, Ambedkar Veedhi, Bengaluru 560001
+                           </li>
+                           <li>
+                              <img class="icon" src="{% static 'homepg/mail.png' %}"> <a href="mailto:uvcemizo@gmail.com"  style="text-decoration: none; color: white;">uvcemizo@gmail.com</a>
+                           </li>
+                           <li>
+                                <img class="icon" src="{% static 'homepg/phone.png' %}"><a href="tel:8730875291"  style="text-decoration: none; color: white;">8730875291</a>
+                           </li>
+
+                       </ul>
+
+
+
+                   </div>
+                </div>
+                <div class="col-md-3 col-xs-4">
+                    <div class="contact">
+                       <div class="implink">IMPORTANT LINKS</div>
+                       <ul class="contactul">
+                            <li>
+                              <a href="https://uvce.ac.in/"  style="text-decoration: none; color: white;">Uvce Website</a><br><br>
+                           </li>
+                           <li>
+                              <a href="https://bangaloreuniversity.karnataka.gov.in/"  style="text-decoration: none; color: white;">Bangalore University</a><br><br>
+                           </li>
+                           <li>
+                                <a href="https://campusuvce.in/"  style="text-decoration: none; color: white;">Training and Placement Office</a><br><br>
+                           </li>
+
+                                <a href="https://hub.uvcemarvel.in/"  style="text-decoration: none; color: white;">Marvel Club UVCE</a>
+                           </li>
+                       </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="aboutus">
+                       <div class="aboutush">ABOUT US</div>
+                       <p>Website created and maintained by Uvce Mizo
+                           Web developer: K. Lalrinchhana , Mech 2018 batch and David Lalhruaitluanga, CSE 2018 batch</p>
+                          <p> K. Lalrinchhana: <a href="tel:8730875291"  style="text-decoration: none; color: white;">8730875291</a></p>
+                           <p>David Lalhruaitluanga:<a href="tel:7085929576"  style="text-decoration: none; color: white;"> 7085929576</a>
+
+                       </p>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2023 Uvce Mizo</p>
+                </div>
+
+            </div></div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="{% static 'homepg/script.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

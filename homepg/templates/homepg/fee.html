@@ -1,0 +1,14 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+<div class="fee">
+         {% for fee in all_fee %}
+
+                {{ fee.fee_word|safe }}
+
+         {% endfor %}
+</div>
+<br><br>
+
+{% endblock %}

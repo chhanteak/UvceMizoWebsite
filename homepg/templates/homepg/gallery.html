@@ -1,0 +1,20 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+<div class="gallery_container">
+    {% for images in images %}
+
+            <div class="gallery">
+                  <img class="gallery_img" src="{{ images.gallery_image.url }}">
+                <div class="description">
+                {{ images.description }}
+                </div>
+            </div>
+         <br><br>
+    {% endfor %}
+
+</div>
+</div>
+<br><br>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+ <div class="placement-container">
+     <div class="placement">
+      {% for scho in all_scho %}
+
+          {{ scho.thuziak_scho|safe }}
+
+       {% endfor %}
+      </div>
+
+
+ </div>
+
+
+{% endblock %}

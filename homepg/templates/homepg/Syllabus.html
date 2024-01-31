@@ -1,0 +1,19 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+
+<br><br>
+<h4 class="nep">Syllabus</h4>
+<div class="constitution">
+       {% for syllabus in all_syllabus %}
+         <div class="consti1">
+
+           <a class="btn_link" href="{{ syllabus.link }}">{{ syllabus.branch }}</a>
+         </div>
+       {% endfor %}
+</div>
+
+<br><br>
+<br><br>
+
+{% endblock %}

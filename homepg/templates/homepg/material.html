@@ -1,0 +1,15 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+<div class="constitution">
+       {% for material in all_material %}
+         <div class="consti1">
+
+           <a class="btn_link" href="{{ material.link }}">{{ material.branch }}</a>
+         </div>
+       {% endfor %}
+</div>
+
+
+{% endblock %}

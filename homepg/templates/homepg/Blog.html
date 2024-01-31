@@ -1,0 +1,26 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+
+<br><br>
+<div class="alumni_thuziak">
+   {% for blog in blog_html %}
+        <div class="alumni_box">
+
+               <img class="alumni_img" src="{{ blog.img_blog.url }}">
+
+               <div class="alumni_name">
+                   <div class="alumni_name1">{{ blog.name_blog }}</div>
+
+                   <div class="alumni_name2">{{ blog.year_batch }}</div><br>
+                   <div class="alumni_word">
+                   {{ blog.thuziak_blog|safe }}
+                   </div>
+               </div>
+
+        </div>
+   {% endfor %}
+
+</div>
+<br><br>
+{% endblock %}

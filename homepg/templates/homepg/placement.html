@@ -1,0 +1,29 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+
+<br><br>
+<div class="container">
+ <div class="row">
+     <div class="col-md-5 mx-auto">
+         <div class="placement">
+                {% for placement in all_placement %}
+
+                      {{ placement.placement_word|safe }}
+
+                {% endfor %}
+         </div>
+     </div>
+
+     <div class="col-md-4 mx-auto">
+
+                 {% for resume in all_resume %}
+
+                        <img class="img_placement" src="{{ resume.resume.url }}">
+
+                 {% endfor %}
+
+     </div>
+ </div>
+</div>
+{% endblock %}

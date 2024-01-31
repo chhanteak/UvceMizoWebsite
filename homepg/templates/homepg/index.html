@@ -1,0 +1,134 @@
+{% extends 'homepg/Base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="container1">
+ <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                     <div class="carousel-indicators">
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                     </div>
+                    <div class="carousel-inner">
+                            <div class="carousel-item active c_item">
+                                    <img src="{{ photo_html.0.photo.url }}" class="d-block w-100 img3" alt="...">
+                            </div>
+                            <div class="carousel-item c_item">
+                                    <img src="{{ photo_html.1.photo.url }}" class="d-block w-100 img3" alt="...">
+                            </div>
+                            <div class="carousel-item c_item">
+                                    <img src="{{ photo_html.2.photo.url }}" class="d-block w-100 img3" alt="...">
+                            </div>
+                            <div class="carousel-item c_item">
+                                    <img src="{{ photo_html.0.photo.url }}" class="d-block w-100 img3" alt="...">
+                            </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 mx-auto">
+              <div class="phone_no">
+                  <h5>Senior number</h5>
+                  <br>
+                       <ul>
+                          {% for senior in seniorno_html %}
+                            <li class="phoneli">
+                                     {{senior.name}} <br>
+                                     {{senior.phone}}
+
+                            </li>
+                    {% endfor %}
+                       </ul>
+              </div>
+           </div>
+
+           <div class="col-md-6 mx-auto">
+             <div class="noti">
+               <h4>Notifications</h4>
+                   <p class="feepay">Exam Fee Payment Link<a href="http://buexam.inhawk.com/studentExamfee/stuexamHome.aspx"> Click Here</a></p>
+                   <ul>
+                      {% for noti in noti_html %}
+                         <li class="notili">{{noti.notify}} </li><br>
+                      {% endfor %}
+                   </ul>
+             </div>
+           </div>
+        </div>
+
+        <div class="row">
+            <div class="col md-12">
+              <div class="thuziak">
+
+                     <div class="full-text">
+                             {{ homepg_thuziak.thuziak_readmore|safe }}
+                     </div>
+                     <div class="hidden-content">
+                           {{ homepg_thuziak.homepage_thuziak|safe }}
+                     </div>
+                      <a href="#" class="read-more-link">Read More</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+               <div class="col md-4">
+                 <a class="card_link" href="{% url 'syllabus' %}">
+                    <div class="card card0">
+                          <div class="card-body">
+                            <h5 class="card-title">SYLLABUS</h5>
+                                <p class="card-text">Click here for syllabus of latest scheme </p>
+
+                            </div>
+                    </div>
+                 </a>
+               </div>
+
+               <div class="col md-4">
+                   <a class="card_link" href="{% url 'question' %}">
+                    <div class="card card1">
+                          <div class="card-body">
+                            <h5 class="card-title two">PREVIOUS YEAR QUESTIONS</h5>
+                                <p class="card-text">Click here for Previous Year Question Papers </p>
+
+                            </div>
+                    </div>
+                   </a>
+               </div>
+               <div class="col md-4">
+                   <a class="card_link" href="{% url 'material' %}">
+                    <div class="card card2">
+                          <div class="card-body">
+                            <h5 class="card-title">MATERIALS</h5>
+                                <p class="card-text">Click Here for study materials and books</p>
+
+                            </div>
+                    </div>
+                   </a>
+               </div>
+
+
+
+
+        </div>
+
+</div>
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,879 @@
+body  {
+            display: flex;
+
+            flex-direction: column;
+            background-color: #ecedee;
+
+
+            }
+
+ul, ol {
+  text-align: left;
+}
+
+
+.container1 {
+                  display:flex;
+                  flex-direction: column;
+
+
+         }
+
+.navbar-collapse {
+                     z-index: 1000; /* Set your desired value */
+                 }
+.navbar  {
+             height:100px;
+             width:100%;
+         }
+
+.navbar-collapse{
+
+         padding-left:210px;
+
+          }
+.navbar-brand {
+
+        padding-left:50px;
+
+         }
+.img1    {
+                  height:70px;
+                  width:70px;
+         }
+
+
+.nav-item {
+            padding:10px;
+          }
+
+
+
+    h4{
+
+        padding-left: 60px;
+    }
+    h5{
+
+        padding-left: 90px;
+    }
+
+.notili   {
+
+
+          }
+.read-more-link {
+            background-color: #4a85de;
+            border: 1px solid #676b7b;
+            padding:5px;
+            border-radius:4px;
+            text-decoration: none;
+            color:white;
+
+
+
+          }
+
+.phone_no {
+
+
+    position:relative;
+    top:40px;
+    left:47%;
+    height:420px;
+    background-color:white;
+    padding:10px;
+    width:350px;
+    display: inline-block;
+    color: #16182a;
+    align-items: center;
+    font-size: 14px;
+    justify-content:space-between;
+    box-shadow: 2px 2px 2px #51515133;
+
+}
+.phoneli {
+
+   padding-bottom:10px;
+}
+
+
+
+.carousel {
+
+               position:relative;
+               left:12.7%;
+               height:500px;
+               width:820px;
+               margin-top:40px;
+               box-shadow: 2px 2px 2px #51515133;
+
+          }
+
+.img3     {
+               position:relative;
+
+               height:500px;
+               width:820px;
+               box-shadow: 2px 2px 2px #51515133;
+          }
+
+ .c_item {
+      position:relative;
+
+      height:500px;
+      width:820px;
+
+        }
+ img4     {
+               position:relative;
+               top:30px;
+               left:50px;
+
+               height:500px;
+               width:400px;
+               box-shadow: 2px 2px 2px #51515133;
+          }
+
+
+
+.noti {
+
+          position:relative;
+          top:40px;
+          left:10px;
+          height:420px;
+          background-color: white;
+          padding:10px;
+          width:350px;
+          font-size: 14px;
+          display: inline-block;
+          align-items: center;
+          justify-content:space-between;
+          box-shadow: 2px 2px 2px #51515133;
+
+      }
+.feepay {
+           margin-left:30px;
+
+        }
+
+main {
+
+    flex: 1;
+
+    margin-bottom:10px;
+}
+
+     .thuziak {
+                position:relative;
+                top:80px;
+                left:12%;
+                width:1000px;
+                padding:20px;
+                background-color: white;
+                margin-bottom:100px;
+                box-shadow: 2px 2px 2px #51515133;
+              }
+
+.hidden-content {
+    display: none;
+}
+
+
+.card {
+  height:200px;
+  width:300px;
+  margin-top:20px;
+  margin-bottom:40px;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 2px #51515133;
+  border-radius:0px;
+  border:none;
+  }
+
+.card:hover {
+
+   transform: scale(1.05);
+
+ }
+.card-body {text-align:center;}
+
+.card0 {
+
+  position:relative;
+  left:45%;
+
+ }
+.card1 {
+
+  position:relative;
+  left:64px;
+
+ }
+.card2 {
+
+  position:relative;
+  left:-57px;
+
+ }
+
+ .card_link { text-decoration:none;
+              color:#000;}
+
+.card_link:hover { text-decoration:none;
+              color:inherit;}
+
+.card-title {
+           padding-left:5px;
+           padding-top:40px;
+
+ }
+.two {padding-left:20px;}
+  .constitution {
+
+         position:relative;
+         width:70%;
+         height:500px;
+         left:50px;
+
+                }
+.consti1 {
+            background-color: white;
+            margin:10px;
+            padding:20px;
+            margin-bottom:20px;
+            box-shadow: 2px 2px 2px #51515133;
+         }
+.consti2 {
+            background-color:white;
+            height:100px;
+            padding:20px;
+            margin:10px;
+            box-shadow: 2px 2px 2px #51515133;
+            
+         }
+
+.btn_link {
+            background-color: #4a85de;
+            border: 1px solid #676b7b;
+            padding:5px;
+            border-radius:4px;
+            text-decoration: none;
+            color:white;
+
+            
+
+          }
+
+
+
+    .img_placement {
+
+        height:600px;
+        width:500px;
+
+          }
+.fee {
+             position:relative;
+             left:27%;
+             width:700px;
+             padding:50px;
+             background-color:white;
+             box-shadow: 2px 2px 2px #51515133;
+             margin-bottom:50px;
+           }
+     .placement {
+             position:relative;
+             left:-50px;
+             width:700px;
+             padding:50px;
+             background-color:white;
+             box-shadow: 2px 2px 2px #51515133;
+             margin-bottom:50px;
+           }
+
+
+
+      .adm_word {
+      position:relative;
+      left:-40px;
+      width:700px;
+      background-color:white;
+      box-shadow: 2px 2px 2px #51515133;
+      padding:50px;
+      margin-bottom:20px;
+
+      }
+
+       .img_adm {
+       position:relative;
+       top:60px;
+       height:550px;
+       width:100%;
+       border: 2px solid grey;
+
+      }
+
+      .adm_pdf {
+        position:relative;
+        background-color:white;
+        box-shadow: 2px 2px 2px #51515133;
+        top:20px;
+        padding:20px;
+        width:100%;
+        margin-bottom:20px;
+
+        }
+
+
+      .alumni_box {
+        
+        position:relative;
+        left:80px;
+        width:1100px;
+        padding:30px;
+        padding-right:40px;
+        display:flex;
+        background-color:white;
+        box-shadow: 2px 2px 2px #51515133;
+        margin-bottom:20px;
+      
+      }
+ .alumni_name1{
+    position:relative;
+    left:70px;
+    Font-weight:bold;
+    font-size:17px;
+    color:#1f1f1f;
+
+    
+    
+
+   }
+   .alumni_name2{
+    position:relative;
+    left:70px;
+    Font-weight:bold;
+    height:10px;
+    font-size:15px;
+    color:#2b2080;
+    
+    
+
+   }
+   
+   .alumni_word {
+     position:relative;
+     padding-top:40px;
+     left:40px;
+     width:900px;
+
+   }
+   
+   .alumni_img {
+
+        position:relative;
+        height:80px;
+        width:80px;
+ 
+
+      }
+      
+      .alumni_name {
+         
+        position:relative;
+
+        top:10px;
+        left:-40px;
+        margin-left:0px;
+        width: 300px;
+        
+
+
+      }
+
+ .gallery_container {
+    position:relative;
+    left:-10px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-start:left;
+    margin-bottom:30px;
+
+
+ }
+.gallery {
+           position:relative;
+           padding-top:20px;
+           height:450px;
+           width:600px;
+           margin:20px;
+
+
+          }
+
+ .gallery_img {
+           position:relative;
+           padding-top:20px;
+           height:400px;
+           width:600px;
+           margin:20px;
+           margin-bottom:20px;
+
+          }
+ .description {
+
+           position:relative;
+           top:10px;
+           left:20px;
+           margin-bottom:20px;
+
+           }
+
+footer {
+        position:relative;
+        width: 100%;
+        height:300px;
+        background-color: #343a40; /* Change this to your footer background color */
+        color: white; /* Change this to your footer text color */
+
+       }
+
+.contact {
+
+        position:relative;
+
+
+        align-items:left;
+        padding-top:30px;
+
+        }
+.insta {
+
+    position:relative;
+    top:80px;
+    left:-100px;
+    padding-bottom:10px;
+
+}
+
+.followus {
+position:relative;
+left:-100px;
+padding-top:30px;
+
+}
+
+.contactus
+{
+    position:relative;
+    left:-100px;
+    padding-bottom:10px;
+    }
+.implink
+{
+    position:relative;
+    left:-40px;
+    padding-bottom:10px;
+    }
+.icon {
+
+        position:relative;
+        left:0px;
+        top:-12px;
+        height:40px;
+        width:40px;}
+
+.contactul {
+  list-style: none;
+  font-size:12px;
+  align-items:left;
+}
+.aboutus {
+
+        position:relative;
+        font-size:14px;
+        align-items:left;
+        padding-top:30px;
+
+        }
+@media (max-width: 1270px) {
+                    .navbar-brand {
+                                     padding-left:20px;
+                                  }
+                    .navbar-collapse {
+                                     padding:50px;
+                                     }
+
+                    .img3{
+                                    display: none; /* Hide the image */
+                         }
+
+                 }
+
+
+
+@media (max-width: 768px) {
+          .navbar-collapse {
+                              width:70%;
+                              padding-left:50px;
+                           }
+
+          .navbar-brand {
+
+                             padding-left:5px;
+
+                        }
+
+
+  .carousel {
+
+               position:relative;
+               left:17px;
+               height:300px;
+               width:450px;
+               margin-top:20px;
+               box-shadow: 2px 2px 2px #51515133;
+
+          }
+
+.img3     {
+               position:relative;
+
+               height:300px;
+               width:450px;
+               box-shadow: 2px 2px 2px #51515133;
+          }
+
+ .c_item {
+      position:relative;
+
+      height:300px;
+      width:450px;
+
+        }
+
+.phone_no {
+
+
+    position:relative;
+    top:40px;
+    left:98px;
+    width:300px;
+    height:auto;
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+.phoneli {
+
+   padding-bottom:4px;
+}
+
+h4{
+        font-size:16px;
+        padding-left: 80px;
+    }
+    h5{
+        font-size:15px;
+        padding-left: 30px;
+        margin-bottom:-10px;
+
+    }
+
+.noti {
+
+          position:relative;
+          top:40px;
+          position:relative;
+
+    left:98px;
+    width:300px;
+    height:auto;
+    font-size:15px;
+    margin-bottom:20px;
+
+
+      }
+.feepay {
+           margin-left:30px;
+
+        }
+
+
+
+.resume_adm {
+       position:relative;
+       height:550px;
+       width:400px;
+
+
+
+      }
+
+.adm_word {
+      position:relative;
+      top:-10px;
+      left:20px;
+      width:450px;
+      font-size:15px;
+      background-color:white;
+      box-shadow: 2px 2px 2px #51515133;
+      padding:40px;
+
+
+      }
+
+.img_adm {
+       position:relative;
+       top:80px;
+       left:-20px;
+       height:450px;
+       width:350px;
+       border: 2px solid grey;
+
+      }
+
+.adm_pdf {
+        position:relative;
+        background-color:white;
+        box-shadow: 2px 2px 2px #51515133;
+        top:40px;
+        left:-25px;
+        padding:20px;
+        width:400px;
+
+
+        }
+.fee {
+             position:relative;
+             left:30px;
+             width:445px;
+             padding:30px;
+             font-size:14px;
+             background-color:white;
+             box-shadow: 2px 2px 2px #51515133;
+             margin-bottom:50px;
+           }
+
+.placement {
+             position:relative;
+             left:20px;
+             width:450px;
+             font-size:14px;
+             padding:20px;
+             background-color:white;
+             box-shadow: 2px 2px 2px #51515133;
+             margin-bottom:50px;
+           }
+
+ .resume {
+          position:relative;
+          left:20px;
+          width:400px;
+             }
+
+.img_placement {
+    position:relative;
+
+        height:500px;
+        width:400px;
+
+          }
+
+
+.alumni_word {
+     position:relative;
+     padding-top:20px;
+     font-size:14px;
+     left:-70px;
+     width:400px;
+     padding-bottom:10px;
+
+   }
+
+ .alumni_box {
+
+        position:relative;
+        left:30px;
+        width:440px;
+        padding:20px;
+        padding-right:40px;
+        display:flex;
+        background-color:white;
+        box-shadow: 2px 2px 2px #51515133;
+        margin-bottom:20px;
+
+      }
+ .alumni_name1{
+
+    Font-weight:bold;
+    font-size:15px;
+    left:-10px;
+    color:#1f1f1f;
+
+
+
+   }
+   .alumni_name2{
+    position:relative;
+    Font-weight:bold;
+    left:-10px;
+    font-size:14px;
+    color:#2b2080;
+   }
+
+
+
+   .alumni_img {
+
+        position:relative;
+        height:50px;
+        width:50px;
+
+
+      }
+
+      .alumni_name {
+
+        position:relative;
+        top:10px;
+        left:10px;
+        margin-left:20px;
+
+      }
+
+ .gallery_container {
+           position:relative;
+           left:-12px;
+
+
+          }
+
+ .gallery {
+           position:relative;
+           left:-5px;
+           padding-top:0px;
+           height:320px;
+           width:440px;
+           margin-bottom:20px;
+
+          }
+
+ .gallery_img {
+           position:relative;
+           padding-top:0px;
+           height:270px;
+           width:440px;
+           margin-bottom:20px;
+
+          }
+ .description {
+
+           position:relative;
+           top:10px;
+           left:20px;
+           margin-bottom:20px;
+
+           }
+
+
+                  .thuziak {
+             position:relative;
+             font-size: 15px;
+             top:40px;
+             left:17px;
+             width:450px;
+
+             padding:20px;
+             margin-bottom:70px;
+             }
+footer {
+ position:relative;
+ height:820px;
+
+}
+
+
+.insta {
+        position:relative;
+        top:30px;
+        left:-170px;
+
+ }
+
+.followus {
+       position:relative;
+       left:-170px;
+
+
+}
+
+.contactus
+{
+    position:relative;
+    left:-170px;
+    padding-bottom:10px;
+    }
+.implink
+{
+    position:relative;
+    left:-150px;
+    padding-bottom:10px;
+    }
+.icon {
+
+        position:relative;
+        left:0px;
+        top:-12px;
+        height:40px;
+        width:40px;}
+
+.contactul {
+  list-style: none;
+  font-size:12px;
+  align-items:left;
+}
+.aboutush {
+
+        position:relative;
+        left:-10px;
+
+        }
+.card {
+  height:100px;
+  width:300px;
+  margin-top:10px;
+  margin-bottom:10px;
+
+  }
+
+.card-title {
+           padding-left:5px;
+           padding-top:0px;
+
+ }
+.card0 {
+
+  position:relative;
+  left:90px;
+
+
+ }
+.card1 {
+
+  position:relative;
+  left:90px;
+
+ }
+.card2 {
+
+  position:relative;
+  left:90px;
+  margin-bottom:40px;
+
+ }
+
+
+  }
